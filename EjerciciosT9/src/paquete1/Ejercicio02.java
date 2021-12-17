@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package paquete1;
 
 /**
@@ -35,7 +30,7 @@ public class Ejercicio02 {
                     } else {
                         if ((respuesta >= 16) && (respuesta <= 20)) {
                             valoresRangos[3] = valoresRangos[3] + 1;
-                        }else{
+                        } else {
                             valoresRangos[4] = valoresRangos[4] + 1;
                         }
 
