@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Modifique el ciclo repetitivo para que salga del mismo, 
+cuando el usuario ingrese por teclado una letra que coincida 
+con alguna de las primeras letras de los nombres del arreglo estudiantes. 
+Debe usar un ciclo repetitivo para recorrer el arreglo estudiantes.
  */
 package paquete1;
 
@@ -23,15 +24,25 @@ public class Ejercicio05 {
         en el archivo Ayuda01.java del paquete2
         */
         Scanner entrada = new Scanner(System.in);
+        
         String[] estudiantes = {"Kimberly", "Hogan",
             "Teresa", "Luis", "Mark", "Jennifer",
             "Alcides"};
         String inicial;
+        
         char inicialLetra;
+        
         boolean bandera = true;
+        
         while (bandera) {
             System.out.println("Ingrese una letra");
             inicial = entrada.nextLine();
+                
+            if (inicial.equals(inicialLetra)){
+                bandera = false;    
+            }
+            
+            
             
         }
 
