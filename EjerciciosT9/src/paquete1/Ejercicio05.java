@@ -29,6 +29,7 @@ public class Ejercicio05 {
             "Teresa", "Luis", "Mark", "Jennifer",
             "Alcides"};
         String inicial;
+
         boolean bandera = true;
 
         while (bandera) {
@@ -38,16 +39,12 @@ public class Ejercicio05 {
             for (int i = 0; i < estudiantes.length; i++) {
 
                 char inicialLetra = estudiantes[i].charAt(0);
-
-            }
-            if (inicial.equals("K") || inicial.equals("H") 
-                    || inicial.equals("T") || inicial.equals("L")
-                    || inicial.equals("M") || inicial.equals("J")
-                    || inicial.equals("A") || inicial.equals("k")
-                    || inicial.equals("h") || inicial.equals("t")
-                    || inicial.equals("m") || inicial.equals("j")
-                    || inicial.equals("a")) {
-                bandera = false;
+                String inicialLetras = String.valueOf(inicialLetra);
+                
+                if (inicial.equals(inicialLetras)){
+                    bandera = false;
+                }
+                
             }
 
         }
